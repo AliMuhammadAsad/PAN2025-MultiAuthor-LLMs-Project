@@ -6,7 +6,7 @@ import warnings
 from enum import Enum
 
 """
-script checks solution files for Style Change Detection Task for PAN@CLEF24
+script checks solution files for Style Change Detection Task for PAN@CLEF25
 """
 
 

@@ -1,0 +1,320 @@
+%% The first command in your LaTeX source must be the \documentclass command.
+%%
+%% Options:
+%% twocolumn : Two column layout.
+%% hf: enable header and footer.
+\documentclass[
+% twocolumn,
+% hf,
+]{ceurart}
+
+%%
+%% One can fix some overfulls
+\sloppy
+
+%%
+%% Minted listings support 
+%% Need pygment <http://pygments.org/> <http://pypi.python.org/pypi/Pygments>
+\usepackage{listings}
+%% auto break lines
+\lstset{breaklines=true}
+
+%%
+%% end of the preamble, start of the body of the document source.
+\begin{document}
+
+% %%
+% %% Rights management information.
+% %% CC-BY is default license.
+\copyrightyear{2022}
+\copyrightclause{Copyright for this paper by its authors.
+  Use permitted under Creative Commons License Attribution 4.0
+  International (CC BY 4.0).}
+
+%%
+%% This command is for the conference information
+\conference{}
+
+%%
+%% The "title" command
+\title{CLEF 2025 PAN: Multi-Author Writing Style Analysis}
+
+% \tnotemark[1]
+% \tnotetext[1]{You can use this document as the template for preparing your
+%   publication. We recommend using the latest version of the ceurart style.}
+
+%%
+%% The "author" command and its associated commands are used to define
+%% the authors and their affiliations.
+\author[1]{Ali Muhammad Asad}[email=aa07190@st.habib.edu.pk]
+\address[1]{Department of Computer Science, Habib University}
+
+\author[2]{Musaib}[email=mu07694@st.habib.edu.pk]
+\address[2]{Department of Computer Science, Habib University}
+
+\author[3]{Syed Muhammad Areeb Kazmi}[email=mk07202@st.habib.edu.pk]
+\address[3]{Department of Computer Science, Habib University}
+
+\author[4]{Sarim Tahir}[email=st07112@st.habib.edu.pk]
+\address[4]{Department of Computer Science, Habib University}
+
+% %% Footnotes
+% \cortext[1]{Corresponding author.}
+% \fntext[1]{These authors contributed equally.}
+
+%%
+%% The abstract is a short summary of the work to be presented in the
+%% article.
+\input{0_abstract.tex}
+
+% %%
+% %% Keywords. The author(s) should pick words that accurately describe
+% %% the work being presented. Separate the keywords with commas.
+% \begin{keywords}
+%   LaTeX class \sep
+%   paper template \sep
+%   paper formatting \sep
+%   CEUR-WS
+% \end{keywords}
+
+%%
+%% This command processes the author and affiliation and title
+%% information and builds the first part of the formatted document.
+\maketitle
+
+\input{1_intro.tex}
+
+\input{2_litrev.tex}
+
+% \subsection{Title Information}
+
+% The titles of papers should be either all use the emphasizing
+% capitalized style or they should all use the regular English (or
+% native language) style. It does not make a good impression if you or
+% your authors mix the styles.
+
+% Use the \verb|\title| command to define the title of your work. Do not
+% insert line breaks in your title.
+
+% \subsection{Authors and Affiliations}
+
+% Each author must be defined separately for accurate metadata
+% identification. Multiple authors may share one affiliation. Authors'
+% names should not be abbreviated; use full first names wherever
+% possible. Include authors' e-mail addresses whenever possible.
+
+% \verb|\author| command have the below options: 
+
+% \begin{itemize}
+% \item \verb|style| : Style of author name (chinese)
+% \item \verb|prefix| : Prefix
+% \item \verb|suffix| : Suffix
+% \item \verb|degree| : Degree
+% \item \verb|role| : Role
+% \item \verb|orcid| : ORCID
+% \item \verb|email| : E-mail
+% \item \verb|url| : URL
+% \end{itemize}
+
+% Author names can have some kinds of marks and notes:
+% \begin{itemize}
+% \item affiliation mark: \verb|\author[<num>]|.
+% \end{itemize}
+
+% The author names and affiliations could be formatted in two ways:
+% \begin{enumerate}
+% \item Group the authors per affiliation.
+% \item Use an explicit mark to indicate the affiliations.
+% \end{enumerate}
+
+% Author block example:
+% \begin{lstlisting}
+% \author[1,2]{Author Name}[%
+%     prefix=Prof.,
+%     degree=D.Sc.,
+%     role=Researcher,
+%     orcid=0000-0000-000-0000,
+%     email=name@example.com,
+%     url=https://name.example.com
+% ]
+
+% \address[1]{Affiliation #1}
+% \address[2]{Affiliation #2}
+% \end{lstlisting}
+
+% \subsection{Abstract and Keywords}
+
+% Abstract shall be entered in an environment that starts
+% with \verb|\begin{abstract}| and ends with
+% \verb|\end{abstract}|. 
+
+% \begin{lstlisting}
+% \begin{abstract}
+%   This is an abstract.
+% \end{abstract}
+% \end{lstlisting}
+
+
+
+% \section{Tables}
+
+% The ``\verb|ceurart|'' document class includes the ``\verb|booktabs|''
+% package --- \url{https://ctan.org/pkg/booktabs} --- for preparing
+% high-quality tables.
+
+% Table captions are placed \textit{above} the table.
+
+% Because tables cannot be split across pages, the best placement for
+% them is typically the top of the page nearest their initial cite.  To
+% ensure this proper ``floating'' placement of tables, use the
+% environment \verb|table| to enclose the table's contents and the
+% table caption. The contents of the table itself must go in the
+% \verb|tabular| environment, to be aligned properly in rows and
+% columns, with the desired horizontal and vertical rules.
+
+% Immediately following this sentence is the point at which
+% Table~\ref{tab:freq} is included in the input file; compare the
+% placement of the table here with the table in the printed output of
+% this document.
+
+% \begin{table*}
+%   \caption{Frequency of Special Characters}
+%   \label{tab:freq}
+%   \begin{tabular}{ccl}
+%     \toprule
+%     Non-English or Math&Frequency&Comments\\
+%     \midrule
+%     \O & 1 in 1,000& For Swedish names\\
+%     $\pi$ & 1 in 5& Common in math\\
+%     \$ & 4 in 5 & Used in business\\
+%     $\Psi^2_1$ & 1 in 40,000& Unexplained usage\\
+%   \bottomrule
+% \end{tabular}
+% \end{table*}
+
+% To set a wider table, which takes up the whole width of the page's
+% live area, use the environment \verb|table*| to enclose the table's
+% contents and the table caption.  As with a single-column table, this
+% wide table will ``float'' to a location deemed more
+% desirable. Immediately following this sentence is the point at which
+% Table~\ref{tab:commands} is included in the input file; again, it is
+% instructive to compare the placement of the table here with the table
+% in the printed output of this document.
+
+% \begin{table}
+%   \caption{Some Typical Commands}
+%   \label{tab:commands}
+%   \begin{tabular}{ccl}
+%     \toprule
+%     Command &A Number & Comments\\
+%     \midrule
+%     \texttt{{\char'134}author} & 100& Author \\
+%     \texttt{{\char'134}table}& 300 & For tables\\
+%     \texttt{{\char'134}table*}& 400& For wider tables\\
+%     \bottomrule
+%   \end{tabular}
+% \end{table}
+
+
+% \section{Figures}
+
+% The ``\verb|figure|'' environment should be used for figures. One or
+% more images can be placed within a figure. If your figure contains
+% third-party material, you must clearly identify it as such, as shown
+% in the example below.
+% \begin{figure}
+%   \centering
+%   \includegraphics[width=\linewidth]{sample-franklin}
+%   \caption{1907 Franklin Model D roadster. Photograph by Harris \&
+%     Ewing, Inc. [Public domain], via Wikimedia
+%     Commons. (\url{https://goo.gl/VLCRBB}).}
+% \end{figure}
+
+% Your figures should contain a caption which describes the figure to
+% the reader. Figure captions go below the figure. Your figures should
+% also include a description suitable for screen readers, to
+% assist the visually-challenged to better understand your work.
+
+% Figure captions are placed below the figure.
+
+% \section{Acknowledgments}
+
+% Identification of funding sources and other support, and thanks to
+% individuals and groups that assisted in the research and the
+% preparation of the work should be included in an acknowledgment
+% section, which is placed just before the reference section in your
+% document.
+
+% This section has a special environment:
+% \begin{lstlisting}
+% \begin{acknowledgments}
+%   These are different acknowledgments.
+% \end{acknowledgments}
+% \end{lstlisting}
+% so that the information contained therein can be more easily collected
+% during the article metadata extraction phase, and to ensure
+% consistency in the spelling of the section heading.
+
+% Authors should not prepare this section as a numbered or unnumbered
+% \verb|\section|; please use the ``\verb|acknowledgments|'' environment.
+
+% \section{Appendices}
+
+% If your work needs an appendix, add it before the
+% ``\verb|\end{document}|'' command at the conclusion of your source
+% document.
+
+% Start the appendix with the ``\verb|\appendix|'' command:
+% \begin{lstlisting}
+% \appendix
+% \end{lstlisting}
+% and note that in the appendix, sections are lettered, not
+% numbered. 
+
+% %%
+% %% The acknowledgments section is defined using the "acknowledgments" environment
+% %% (and NOT an unnumbered section). This ensures the proper
+% %% identification of the section in the article metadata, and the
+% %% consistent spelling of the heading.
+% \begin{acknowledgments}
+%   Thanks to the developers of ACM consolidated LaTeX styles
+%   \url{https://github.com/borisveytsman/acmart} and to the developers
+%   of Elsevier updated \LaTeX{} templates
+%   \url{https://www.ctan.org/tex-archive/macros/latex/contrib/els-cas-templates}.  
+% \end{acknowledgments}
+
+% %% The declaration on generative AI comes in effect
+% %% in Janary 2025. See also
+% %% https://ceur-ws.org/GenAI/Policy.html
+% \section*{Declaration on Generative AI}
+%   {\em Either:}\newline
+%   The author(s) have not employed any Generative AI tools.
+%   \newline
+  
+%  \noindent{\em Or (by using the activity taxonomy in ceur-ws.org/genai-tax.html):\newline}
+%  During the preparation of this work, the author(s) used X-GPT-4 and Gramby in order to: Grammar and spelling check. Further, the author(s) used X-AI-IMG for figures 3 and 4 in order to: Generate images. After using these tool(s)/service(s), the author(s) reviewed and edited the content as needed and take(s) full responsibility for the publication’s content. 
+
+%%
+%% Define the bibliography file to be used
+\bibliography{sample-ceur}
+
+%%
+% %% If your work has an appendix, this is the place to put it.
+% \appendix
+
+% \section{Online Resources}
+
+
+% The sources for the ceur-art style are available via
+% \begin{itemize}
+% \item \href{https://github.com/yamadharma/ceurart}{GitHub},
+% % \item \href{https://www.overleaf.com/project/5e76702c4acae70001d3bc87}{Overleaf},
+% \item
+%   \href{https://www.overleaf.com/latex/templates/template-for-submissions-to-ceur-workshop-proceedings-ceur-ws-dot-org/pkfscdkgkhcq}{Overleaf
+%     template}.
+% \end{itemize}
+
+\end{document}
+
+%%
+%% End of file

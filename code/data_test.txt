@@ -1,0 +1,49 @@
+problem-1.txt:
+
+There's also incidents of "testosterone insensitive males" that have either ambiguous genitals or are phenotypically female.
+Female is the human "default" body plan so a number of conditions exist that cause female-looking males.
+What about people born appearing 100% female, complete with the bits, but are genetically males?
+Who can they have sex with without sinning?
+According to the bible, are they men or women?
+Are Christian hardliners going to be happy with 100% female looking (from birth) males marrying women?
+Something tells me they won't.
+Presence of ovum producing organs, even if non functional would classify it as female, presence of sperm producing organs would classify it male, presence of both to some degree would classify it as male and female, collectively referred to as a hermaphrodite, presence of no reproduction organs would, regardless of DNA, make it sexless.
+Was God wrong when he made these people this way?
+Is their very existence sinful?
+Typically, hardliners and far right will get extremely angry when you point this out because its impossible to square these facts with their narrow worldview.
+They get even madder when you ponder which bathroom these people should use.
+"well, if they look like a guy they should use the mens bathroom" - then you point out by their logic that trans people should use the "wrong" bathroom and they meltdown.
+Republicans are forcing these people to use bathrooms which may not match what they look like or identify as.
+Imagine being raised a female and looking 100% female your whole life only to discover you're a male with AIS when you're 40 and have Trumplican laws force you to use the men's bathroom.
+This is actually happening to people.
+And imagine your friends finding this out because you can't legally use the girls bathroom anymore.
+
+truth-problem-1.json:
+{
+    "authors": 2,
+    "changes": [0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+}
+
+---
+problem-2.txt:
+
+Do you understand what you are saying here?
+This would be reasonable if WW3 wasn't one of the very possible and very few outcomes and if Ukraine winning the war with Russia's unconditional surrender was actually a possible outcome.
+What you are saying is you think WW3 or Ukrainians being genocided completely is better than making concessions.
+Concessions and peace negotiations should absolutely, positively be on the table.
+You do not want war.
+Ask someone who has seen war if war is a noble or fun thing to be a part of.
+Not to continue ranting on this point, but do you want a frag grenade dropped on you by a drone while you are shitting in a frozen ditch?
+That's what is happening right now to soldiers on both sides in Ukraine.
+You especially do not war with a nuclear power headed by a psychopath who doesn't give a fuck and wishes to re-implement a Russian empire by whatever means possible.
+Exactly.
+Right now Ukraine is holding its own against Russia.
+That's a small miracle even with Western equipment.
+If they give Putin a chance to recuperate he'll mass forces and steamroll them no matter the cost in Russian soldiers lives.
+
+
+truth-problem-2.json:
+{
+    "authors": 2,
+    "changes": [0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+}

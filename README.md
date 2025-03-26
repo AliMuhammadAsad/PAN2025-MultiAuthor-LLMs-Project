@@ -89,6 +89,14 @@ python evaluator.py --predictions <path_to_output_file> --truth dataset/ --outpu
 where ```<path_to_output_file>``` is the path to the output file where the evaluation results will be stored. The results are stored as a .prototext file.
 
 ---
+### Results (so far):
+
+| Model | F1 Score (Easy) | F1 Score (Medium) | F1 Score (Hard) |
+|-------|-----------------|-------------------|-----------------|
+| Bag of Words (Baseline) | 0.6531 | 0.6498 | 0.5725 |
+| Bag of Words (Improved) | 0.7910 | 0.6657 | 0.6125 |
+
+---
 
 ### Contributors:
 

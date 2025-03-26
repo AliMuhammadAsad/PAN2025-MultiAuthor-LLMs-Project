@@ -1,0 +1,27 @@
+\section{Methodology}
+\subsection{Dataset}
+The dataset was provided by PAN, based on user posts from various subreddits of the Reddit platform. It is divided into three levels: easy, medium and hard, where each level is split into three parts:
+\begin{itemize}
+    \item \textit{training set:} Contains 70\% of the whole dataset and includes ground truth data. This data would be used to develop and train the models.
+    \item \textit{validation set:} Contains 15\% of the whole dataset and includes ground truth data. This data would be used to evaluate and optimize the models.
+    \item \textit{test set:} Contains 15\% of the whole dataset and does not include ground truth data. This data would be used to evaluate the models.
+\end{itemize}
+
+\subsubsection*{Input Format}
+For each problem instance X (i.e., each input document), two files are provided:
+\begin{enumerate}
+    \item \textit{problem-X.txt} which contains the actual text in the form of sentences of varying lengths.
+    \item \textit{truth-problem-X.json} which contains the ground truth, i.e., the correct solution in JSON format. 
+\end{enumerate}
+
+\noindent A sample json file looks as so:
+\begin{verbatim}
+{"authors": 2,
+"changes": [0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]}
+\end{verbatim}
+where the key `changes' is an array of consecutive sentences within each document (0 when there is no change, and 1 when there is a change). 
+
+\subsection{Initial Approach}
+The initial approach, which is also our baseline, was to use the Bag of Words (BoW) method for feature extraction from the sentences, coupled with a simple logistic regression model for classification. The Bag of Words method is a simple and effective way to represent text data. It involves creating a vocabulary of unique words and then representing each sentence as a vector of word counts. This became our baseline approach, as it is simple and easy to implement, and was backed by previous implementations \cite{paper1}.
+
+Once our baseline was set, we modified the bag of words approach to combine n-grams and syntactic/lexical features (sentence length, POS tag frequencies, etc), along with calss weighting to handle the class imbalance between instances of 0s and 1s, and finally used a vectorized tuning with ngram\_range of (1, 2) to include both unigrams and bigrams in the feature set, in order to improve the model's performance by capturing more context and semantics from the text data. This showed an improvement in the model's performance over the baseline. 

@@ -1,0 +1,16 @@
+\section{Results}
+
+This section presents the results of our experiments. The table below shows the performance of the models on the validation set. The models were evaluated based on the F1 score, which is the harmonic mean of precision and recall. The F1 score is a good metric for imbalanced datasets, as it considers both false positives and false negatives. The F1 score is presented for each level, easy, medium and hard.
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{|l|l|l|l|}
+    \hline
+    \textbf{Level} & \textbf{F1 (Easy)} & \textbf{F1 (Medium)} & \textbf{F1 (Hard)} \\ \hline
+    \textbf{Baseline BoW} & 0.65 & 0.65 & 0.57 \\ \hline
+    \textbf{Improved BoW} & 0.79 & 0.67 & 0.61 \\ \hline
+\end{tabular}
+\caption{F1 scores of the models on the validation set}
+\end{table}
+
+The results show an improvement in the F1 score for the improved BoW model over the baseline BoW model on all levels. 

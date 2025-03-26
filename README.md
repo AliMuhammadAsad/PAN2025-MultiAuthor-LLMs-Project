@@ -60,6 +60,15 @@ The result (key "changes") is represented as an array, holding a binary for each
 
 ---
 
+### Results (so far):
+
+| Model | F1 Score (Easy) | F1 Score (Medium) | F1 Score (Hard) |
+|-------|-----------------|-------------------|-----------------|
+| Bag of Words (Baseline) | 0.6531 | 0.6498 | 0.5725 |
+| Bag of Words (Improved) | 0.7910 | 0.6657 | 0.6125 |
+
+---
+
 ### Output Structure:
 For each of the implementation of the models, the output structure should be as follows:
 ```
@@ -87,14 +96,6 @@ To evaluate the output, change the directory to the ```evaluator``` folder and r
 python evaluator.py --predictions <path_to_output_file> --truth dataset/ --output <path_to_output_file>
 ```
 where ```<path_to_output_file>``` is the path to the output file where the evaluation results will be stored. The results are stored as a .prototext file.
-
----
-### Results (so far):
-
-| Model | F1 Score (Easy) | F1 Score (Medium) | F1 Score (Hard) |
-|-------|-----------------|-------------------|-----------------|
-| Bag of Words (Baseline) | 0.6531 | 0.6498 | 0.5725 |
-| Bag of Words (Improved) | 0.7910 | 0.6657 | 0.6125 |
 
 ---
 

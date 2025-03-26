@@ -17,6 +17,49 @@ This repo contains the project for the course ```CS/CE 335/466 - Introduction to
 
 ---
 
+### Dataset
+
+The dataset is divided into three levels: easy, medium and hard, where each level is split into three parts:
+- _training set_: Contains 70% of the whole dataset and includes ground truth data. This data would be used to develop and train the models.
+- _validation set_: Contains 15% of the whole dataset and includes ground truth data. This data would be used to evaluate and optimize the models.
+- _test set_: Contains 15% of the whole dataset, no ground truth data is given. This set is held by the organizers and would be used to evaluate the models.
+
+**Input Format:**
+For each problem instance X (i.e., each input document), two files are provided:
+1. *problem-X.txt*: contains the actual text.
+2. *truth-problem-X.json*: contains the ground truth, i.e., the correct solution in JSON format.
+
+Examples for the above formats are as so:
+
+sample.txt file
+```
+Do you understand what you are saying here?
+This would be reasonable if WW3 wasn't one of the very possible and very few outcomes and if Ukraine winning the war with Russia's unconditional surrender was actually a possible outcome.
+What you are saying is you think WW3 or Ukrainians being genocided completely is better than making concessions.
+Concessions and peace negotiations should absolutely, positively be on the table.
+You do not want war.
+Ask someone who has seen war if war is a noble or fun thing to be a part of.
+Not to continue ranting on this point, but do you want a frag grenade dropped on you by a drone while you are shitting in a frozen ditch?
+That's what is happening right now to soldiers on both sides in Ukraine.
+You especially do not war with a nuclear power headed by a psychopath who doesn't give a fuck and wishes to re-implement a Russian empire by whatever means possible.
+Exactly.
+Right now Ukraine is holding its own against Russia.
+That's a small miracle even with Western equipment.
+If they give Putin a chance to recuperate he'll mass forces and steamroll them no matter the cost in Russian soldiers lives.
+```
+
+sample.json file:
+```
+{
+    "authors": 2,
+    "changes": [0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+}
+```
+
+The result (key "changes") is represented as an array, holding a binary for each pair of consecutive sentences within the document (0 if there was no style change, 1 if there was a style change).
+
+---
+
 ### Output Structure:
 For each of the implementation of the models, the output structure should be as follows:
 ```

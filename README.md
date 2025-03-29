@@ -66,6 +66,7 @@ The result (key "changes") is represented as an array, holding a binary for each
 |-------|-----------------|-------------------|-----------------|
 | Bag of Words (Baseline) | 0.6531 | 0.6498 | 0.5725 |
 | Bag of Words (Improved) | 0.7910 | 0.6657 | 0.6125 |
+| BERT | 0.9412 | 0.7879 | 0.7547 |
 
 ---
 

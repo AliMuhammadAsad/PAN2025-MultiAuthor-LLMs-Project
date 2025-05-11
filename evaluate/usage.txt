@@ -1,0 +1,1 @@
+python evaluator.py --predictions <path_to_output_file> --truth dataset/ --output <path_to_output_file>

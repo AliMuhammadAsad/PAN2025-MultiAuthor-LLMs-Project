@@ -4,9 +4,9 @@ measure{
 }
 measure{
   key: "task2_f1_score"
-  value: "0.7879271319816065"
+  value: "0.8063284083299432"
 }
 measure{
   key: "task3_f1_score"
-  value: "0.7546862707331262"
+  value: "0.7895869932297385"
 }

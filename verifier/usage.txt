@@ -1,0 +1,1 @@
+python verifier.py --output <path_to_output_file> --input dataset/
